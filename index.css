@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    html,body{
+    height: 100%;
+    width: 100%;
+    
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    #main{
+        width: 100%;
+    }
+    
+    #page1{
+        width: 100%;
+        height: 100vh;
+        background-color:#fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 100;
+    
+    }
+    
+    #page1 h1{
+        font-size: 70vh;
+    }
+    
+    #page2{
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        align-items:end;
+        overflow: hidden;
+    
+    }
+    
+    
+    
+    #page2 h1{
+        color: #fff;
+        font-size: 24vw;
+        line-height: 85%;
+        position: absolute;
+        left: -10%;
+        
+       
+    }
+    
+    #page2 h2{
+        color: #fff;
+        font-size: 3.5vw;
+        padding-bottom: 15vw;
+        position: absolute;
+        left: 67%;
+    
+    }
+    
+    
+    /* page 3 starts from here */
+    
+    #page3{
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    
+    }
+    
+    
+    #page3 h1{
+        font-size: 4vw;
+    }
+    
+    #page3line{
+        width: 2px;
+        height: 0%;
+        background-color: #000;
+        position: absolute;
+        top: 55%;
+    }
+    
+    
+    #page4{
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    
+    #page4 h1{
+        font-size: 4vw;
+        color: #fff;
+    }
+    
+    #page4line1{
+        width: 2px;
+        height: 0%;
+        background-color: #fff;
+        position: absolute;
+        top: 0%;
+    }
+    
+    #page4line2{
+        width: 0vw;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 55%;
+        left: 51%;
+        display: flex;
+        justify-content: center;
+        z-index: 99;
+        
+        
+    }
+    
+    #page4line3{
+        width: 2px;
+        height:0px;
+        background-color: #fff;
+        transform-origin: top;
+        transform: rotate(30deg);
+        z-index: 0;
+    }
+    
+    #page4line4{
+        width: 2px;
+        height:0px;
+        background-color: #000;
+        transform-origin: top;
+        transform: rotate(30deg);
+        z-index: 0;
+        display: block;
+        
+    }
+    
+    
+    
+    #page5{
+        width: 100%;
+        height: 100vh;
+    
+        position: relative;
+        
+        
+    }
+    
+    #page5line1{
+        width: 2px;
+        height: 0%;
+        background-color: #000000;
+        position: absolute;
+        top:50%;
+    }
+    #p5beforetext{
+        font-size: 4vw;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        
+        display: block;
+        
+    }
+    
+    #p5aftertext{
+        font-size: 4vw;
+        opacity: 0;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+    }
+    
+    #p5aftertext span{
+        display:none;
+        opacity: 0;
+        transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+        
+    }
+    
+    /* #page5:hover #p5aftertext span {
+        display: inline-block;
+        opacity: 1;
+    } */
+    
+    
+    #page5 h3{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+    }
+    
+    #page5 h2{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 55%;
+        left: 50%;
+        font-size: 1.8vw;
+        opacity: 0;
+        
+    }
+    
+    #p5blackline{
+        width: 5vw;
+        height: 42%;
+        position: absolute;
+        transform: translate(-50%,0%);
+        background-color: #000;
+        left: 50%;
+        bottom: 0%;
+        opacity: 0;
+    }
+    
+    #page6{
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        position: relative;
+    }
+    
+    #contentp5{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top:40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+    
+        
+        
+    }
+    
+    #page6 h1{
+        rotate: 90deg;
+        position: fixed;
+        /* margin-top: 50px; */
+        font-size: 5vw;
+        text-align:left;
+    }
+    
+    #page6 h2{
+        font-size: 2vw;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    #p6blackline1{
+        width: 5vw;
+        height: 20%;
+        position: absolute;
+        transform: translate(-50%,0%);
+        background-color: #000;
+        left: 50%;
+        top: 0%;
+        
+    
+    }
+    
+    #p6blackline2{
+        width: 5vw;
+        height: 25%;
+        position: absolute;
+        transform: translate(-50%,0%);
+        background-color: #000;
+        left: 50%;
+        bottom: 0%;
+        
+    
+    }
+    
+    
+    #page7{
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        position: relative;
+    }
+    
+    
+    #p7blackline{
+        width: 5vw;
+        height: 45%;
+        position: absolute;
+        transform: translate(-50%,0%);
+        background-color: #000;
+        left: 50%;
+        top: 0%;
+        
+    
+    }
+    
+    
+    #container{
+        width: 420px;
+        height: 50px;
+        background-color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color: #000;
+        overflow: hidden;
+        
+    }
+    
+    #container h1{
+        position: absolute;
+        left: 0;
+    }
+    
+    #conatiner h1 span{
+        opacity: 1;
+    }
+    
+    
+    #explore{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 70%;
+        filter: blur(10px);
+    }
+    
+    #explore p{
+        font-size: 15px;
+        font-weight: 600;
+        
+        z-index: 9;
+        
+    }
+    
+    #explore i{
+        font-size: 20px;
+        z-index: 9;
+    }
+    
+    
+    
+    .auto-type {
+        visibility: hidden;
+    }
+    
